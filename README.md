@@ -21,3 +21,11 @@ In a separate cloud shell terminal:
 kill -s SIGUSR2 [PID]
 kill -s SIGPIPE [PID]
 ```
+
+### Sample Result
+
+A Google Cloud Shell was used to compare direct App Engine webhook calls to publishing a PubSub topic.
+
+The App Engine response time is always greater than the webhook response time. And the App Engine response time is highly variable.
+
+![test](https://github.com/Rise-Vision/google-pub-sub-test/blob/master/test.png)
